@@ -4,7 +4,7 @@
 document.addEventListener("DOMcontentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
-    for (let buttons){
+    for (let buttons of buttons){
         button.addEventListener("click", function(){
     if (this.getAttribute("data-type") ==="submit" ){
         alert("You clicked submit!");
