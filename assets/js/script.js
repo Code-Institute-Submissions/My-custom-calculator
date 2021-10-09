@@ -6,8 +6,14 @@ document.addEventListener("DOMcontentLoaded", function() {
 
     for (let button for buttons){
         button.addEventListener("click", function(){
+    if (this.getAttribute("data-type") ==="submit" ){
+        alert("You clicked submit!");
+    } else { 
+        let gameType = this.getAttribute("data-type");
+        alert("You clicked ${gameType}")
+    }
+    }
 
-            
 )}
         
 
