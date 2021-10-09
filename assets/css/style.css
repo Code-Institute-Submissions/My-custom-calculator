@@ -51,8 +51,8 @@ body {
 }
 
 .controls-area {
-    width: 100%;
-    margin: 50px auto;
+    width: 75%;
+    margin: 40px auto;
 }
 
 #score {
@@ -88,7 +88,7 @@ body {
 
 .btn {
     width: 220px;
-    height: 75px;
+    height: 60px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
