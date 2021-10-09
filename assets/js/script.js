@@ -57,8 +57,8 @@ function incrementwrongAnswer() {
 
 function displayAdditionQuestion(_operand1, _operand2) {
 
-    document.getElementById("_operand1"). textContent = _operand1;
-    document.getElementById("_operand1"). textContent = _operand2;
+    document.getElementById("operand1"). textContent = operand1;
+    document.getElementById("operand2"). textContent = operand2;
     document.getElementById("operator"). textContent = "+";
 
 
