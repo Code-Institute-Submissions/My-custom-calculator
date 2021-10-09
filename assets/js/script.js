@@ -45,7 +45,16 @@ throw 'Unknown game type: ${gameType}. Aborting!'
 function checkAnswer() {
 
 let userAnswer = parseInt(document.getElementById("answer-box").value);
+let calculatedAnswer = calculatecorrectAnswer();
+let iscorrect = userAnswer === calculatedAnswer[0];
+
+if (iscorrect) {
+    alert("yes you got it right : D");
+}else {
+    alert( "awww.. you answered ${userAnswer}. The correct answer was ${ calculatedAnswer[0]!}");
+}
  }
+runGame(calculatedAnswer[1]);
 
 /**
  * Gets the operands (the numbers) and the operator (plus , minus etc)
