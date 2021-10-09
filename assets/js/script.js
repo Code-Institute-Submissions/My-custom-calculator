@@ -23,14 +23,13 @@ document.addEventListener("DOMcontentLoaded", function() {
  * The main game "loop", called when the script is first loaded 
  * and after the user answer has been processed
  */
-
 function runGame(gameType) {
 }
     // Create two random numbers between 1 and 25
     let num1 = Math.floor(Math.random() *25) + 1;
     let num2 = Math.floor(Math.random() *25) + 1;
     
-if(gameType === "Addition") {
+    if(gameType === "Addition") {
     displayAdditionQuestion(num1, num2);
 } else{
     alert("Unknown game type: $(gameType");
