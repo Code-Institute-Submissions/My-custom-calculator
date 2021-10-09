@@ -34,12 +34,18 @@ function runGame(gameType) {
 } else{
     alert('Unknown game type: $(gameType');
 throw 'Unknown game type: ${gameType}. Aborting!'
-
-
 }
+
+
+
+/**
+ * check the answer against the first element in
+ * the returned calculatedCorrectAnswer Array
+*/
 function checkAnswer() {
 
-}
+let userAnswer = parseInt(document.getElementById("answer-box").value);
+ }
 
 /**
  * Gets the operands (the numbers) and the operator (plus , minus etc)
