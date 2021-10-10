@@ -77,8 +77,12 @@ if (operator === "+"){
 
 function incrementscore() {
 
+/**
+ * Gets the current score from the DOM and increment it by 1
+ */
 }
 
+let oldScore = parseInt(document.getElementById("score").innerText);
 function incrementwrongAnswer() {
 
 }
