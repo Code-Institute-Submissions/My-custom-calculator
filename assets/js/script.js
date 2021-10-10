@@ -13,7 +13,7 @@ document.addEventListener("DOMcontentLoaded", function() {
         runGame(gameType);
     }
     })
-    }
+}
 
     runGame("Addition");
 
@@ -50,10 +50,13 @@ let iscorrect = userAnswer === calculatedAnswer[0];
 
 if (iscorrect) {
     alert("yes you got it right : D");
+    incrementscore();
 }else {
-    alert( "awww.. you answered ${userAnswer}. The correct answer was ${ calculatedAnswer[0]!}");
+   alert( "awww.. you answered ${userAnswer}. The correct answer was ${ calculatedAnswer[0]!}");
+   incrementwrongAnswer();
 }
- }
+}
+ 
 runGame(calculatedAnswer[1]);
 
 /**
@@ -75,20 +78,28 @@ if (operator === "+"){
 
 }
 
-function incrementscore() {
+
 
 /**
  * Gets the current score from the DOM and increment it by 1
  */
-}
+ function incrementscore() {
 
 let oldScore = parseInt(document.getElementById("score").innerText);
-function incrementwrongAnswer() {
+document.getElementById("score").innerText = ++oldScore;
 
+ }
+
+/**
+ * Gets the current tally incorrect answers from the DOM and increment it by 1
+ */
+function incrementwrongAnswer() {
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
 
 
-function displayAdditionQuestion(_operand1, _operand2) {
+function displayAdditionQuestion(operand1, operand2) {
 
     document.getElementById("operand1"). textContent = operand1;
     document.getElementById("operand2"). textContent = operand2;
@@ -103,5 +114,4 @@ function displaySubtractQuestion() {
 }
 
 function displayMultiplyQuestion() {
-
 }
